@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" width="width-device-width">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="forall.css">
+        <script src="java.js"></script>
+        <title>Form page</title>
+    </head>
+    <script>
+        document.getElementById('submit-button').addEventListener('click', displayGreeting);
+        document.getElementById('greeting').textContent = greeting;
+    </script>
+    <style>
+        .main-feedback-form {
+            min-width: flex;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <body div name="maform">
+    <!--<body style="background-color:cadetblue;">-->
+        <nav align="center">  
+            <button><a href="mainpage.html">Main page</a></button>
+            <button><a href="login.html">Login page</a></button>
+            <button><a href="contact.html">Contact page</a></button>
+            <button><a href="about.html">About page</a></button>
+        </nav>
+        <br><br>
+        <div class="main-feedback-form">
+            <form action="#" method="POST">
+                <label for="name">First Name</label>
+                <input type="text" id="name" name="name" placeholder="Your first name" required>
+                
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Your last name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Your feedback" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
