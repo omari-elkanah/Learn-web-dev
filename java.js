@@ -6,3 +6,5 @@ function displayGreeting() {
 }
 /*innerHTML, document.write, (window).alert()), console.log(),window.print()
 */
+//const cars =["Japan","Africa","USA"];
+//cars.pull[1];cars.push[1]=["China"];
